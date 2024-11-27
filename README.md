@@ -6,7 +6,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/KanatSeytov/halalguide_test.git
 cd halalguide
 ```
 ### 2. Create a Virtual Environment

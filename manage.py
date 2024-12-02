@@ -3,7 +3,7 @@
 import os
 import sys
 
-from .halalguide.settings import base
+from halalguide.settings import base
 
 
 def main():

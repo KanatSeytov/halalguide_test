@@ -3,10 +3,15 @@
 import os
 import sys
 
+from .halalguide.settings import base
+
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'halalguide.settings')
+    if base.DEBUG:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'halalguide.settings.local')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'halalguide.settings.production')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
